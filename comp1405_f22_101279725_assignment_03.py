@@ -1,0 +1,20 @@
+import sys
+
+A = False if sys.argv[1] == "0" else True
+B = False if sys.argv[2] == "0" else True 
+C = False if sys.argv[3] == "0" else True 
+D = False if sys.argv[4] == "0" else True
+E = False if sys.argv[5] == "0" else True 
+F = False if sys.argv[6] == "0" else True 
+G = False if sys.argv[7] == "0" else True 
+H = False if sys.argv[8] == "0" else True 
+I = False if sys.argv[9] == "0" else True
+J = False if sys.argv[10] == "0" else True
+K = False if sys.argv[11] == "0" else True
+L = False if sys.argv[12] == "0" else True 
+
+
+result1 = (not A or not B) and (B and C)
+result2 = ((not H or L) or G) and (not H)
+
+print("<" + str(result1) + ", " + str(result2) + ">")
