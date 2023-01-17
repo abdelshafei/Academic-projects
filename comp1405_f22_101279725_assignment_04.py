@@ -1,0 +1,148 @@
+    # Studentname: Abdelrahman ElShafay     carleton ID: 101279725
+
+    ######################################
+    ###list of distinguishing elements:###
+    ######################################
+
+    # Action or Adventure comedy films:-
+    
+    # "Minions The Rise Of Guru"- Animated, Produced by illumination, Starring steve carell as the voice actor of guru, most of the movie is cenetered around bananas 
+    # "Thor Love And Thunder"- Hero, Romance, CGI, Starring chris hemsworth, made by marvel, Group, Norse mythology
+    # "DC League of Super Pets"- Animal Heros, Group, 3D Animated, CGI, made by DC, Pets 
+    # "The Lost City"- the protagonist is kidnapped to a jungle, Starring Sandra bullock, Treasure hunt, The protagonist is a writer 
+    # "Free Guy"- NPC, Video Game World, Starring ryan renolds, Superpowers, respawnes over and over again
+    # "Suicide Squad"- villans, Group, menaces, starring jared jared leto as the joker 
+    # "Spiderman Into The Spider-verse"- multiverses, Animated, same hero from different universes, group, CGI 
+    # "The Super Mario Bros Movie"- 3D Animated, CGI, Starring Chris Pratt as the voice actor of Mario, starrring Anya Tylor-Joy as the voice actor of Princess peach
+    # "The Adam Project"- Time travel, starring ryan renolds, plane testing gone wrong, emotional end
+    # "Spider-man: No way home"- hero, group multiverse, starring tom holland, CGI, Produced by Marvel
+
+
+    # Chase Films or Thrillers:-
+
+    # "The Purge"- villans, Mass murder without  consequences, clown mask wearing murdereres,  inspired by a Star Trek: The Original Series episode, "The Return of the Archons", Starring Ethan Hawke as James Sandin
+    # "Smile"- a mysterious entity that can make anybody smile and then kill themselves, contagious, Starring Sosie Bacon as Dr. Rose Cotter
+    # "The Man From Toronto"- Espionage, Starring Woody Harrelson as the "Man from toronto", the protagonist was a Gym coach, Romance 
+    # "Red Notice"- detective works, Starring Dwayne Johnson as John Hartley, Romance 
+    # "The Black Phone"- Serial kidnapper and killer on the loose, Based on "The Black Phone" by Joe Hill, Starring Ethan Hawke as The Grabber 
+    # "The Batman"- Hero, Wears a Bat suit, Has a butler named alfred, Orphan, Starring Robert Pattinson as Batman
+    # "Day Shift"- Hunts for vapmires, Normally Works as a poolguy, Gore, Starring Jamie Foxx as Bud Jablonski
+    # "Orphan: First Kill"- psycopathic lair, Orphan, Gore, Starring Isabelle Fuhrman as The Orphan
+    # "Prey"- Alien-like creature, villian, danger to humans, Starring Dane DiLiegro as the Predator
+    # "Venom: Let There Be Carnage"- Hero, Alien-like creature, CGI, Produced by Sony 
+
+instructions = input("Do you want instructions into how to play the guess the movie game? ").lower()
+if instructions == "yes":
+    print()
+    print("To begin you have to type either thriller or action inorder to choose the sub genre you want (any other words will result in an error)")
+    print()
+    print("Secondly when it comes to guessing the movies, you have to type either yes or no (again, if you type any other words it will result in an error)")
+    print()
+    print("The movies avalible for the Chase films or Thrillers sub-genre are:")
+    print("- The purge")
+    print("- Smile")
+    print("- The man from toronto")
+    print("- Red Notice")
+    print("- The Black Phone")
+    print("- The Batman")
+    print("- Day Shift")
+    print("- Ophan: First Kill")
+    print("- Prey")
+    print("- Venom: Let There Be Carnage")
+    print()
+    print("The movies avalible for the Action or Adventure comedy films sub-genre are:")
+    print("- Minions The Rise Of Guru")
+    print("- Thor Love And Thunder")
+    print("- Dc League Of Super Pets")
+    print("- The Lost City")
+    print("- Free Guy")
+    print("- Suicide Squad")
+    print("- Spiderman Into The Spider-Verse")
+    print("- The Super Mario Bros Movie")
+    print("- The Adam Project")
+    print("- Spider-man: No way home")
+    print()
+elif instructions == 'no':
+    print("Continuing without instruction.")
+
+while True:
+    choose=input("choose between either Thriller or  Action inorder to choose the movie sub-genre you want: ").lower()
+    if choose == "thriller":
+        v = input ("is it based on a villan main character? ").lower()
+        if v == "yes":
+            L = input ("was it released after the year 2020? ").lower()
+            if L == "no":
+                print("the movie you are thinking of is the purge")
+            elif L == "yes":
+                m = input("was the lead actor male? ").lower()
+                if m == "yes":
+                    print("the movie you were thinking of was the black phone")
+                elif m == "no":
+                    p = input("was the movie set in the 1800s?  ").lower()
+                    if p == "yes":
+                        print("the movie you were guessing was prey")
+                    elif p == "no":
+                        o = input("is the movie based on an orphan getting adopted? ").lower()
+                        if o == "yes":
+                            print("the movie you were thinking of is Orphan: First Kill")
+                        elif o == "no":
+                            print("the movie you were thinking of is smile")     
+        elif v == "no":
+            h = input("is the movie considered heroic? ").lower() 
+            if h == "no":
+                print("the movie you were thinking of was Red notice") 
+            elif h == "yes":
+                va = input("is the movie based on vampires? ").lower()
+                if va == "yes":
+                    print("ypu were thinking of the movie Day Shift")
+                elif va == "no":
+                    s = input("did sony produce the movie? ").lower()
+                    if s == "yes":
+                        print("the movie you were thinking of was Venom: Let There Be Carnage")  
+                    elif s == "no":
+                        k = input("was the actor kevin hart a big part of it? ").lower()
+                        if k == "yes":
+                            print("the movie you were thinking of is The Man From Toronto") 
+                        elif k == "no":
+                            print("the movie you were thinking of is The Batman")
+    elif choose == "action":
+        z= input("is it a a hero movie? ").lower()
+        if z == "yes":
+                u = input("does the protagoinst(s) possess superpowers? ").lower()
+                if u == "no":
+                    print("the movie you were trying to guess is the Adam project")
+                elif u == "yes":
+                    y =  input("was the movie produced by sony? ").lower()
+                    if y == "yes":
+                        print("the animated movie you were thinking about is the Spiderman Into The Spider-verse") 
+                    elif y == "no":
+                        b = input("was the movie produced by marvel? ").lower()
+                        if b == "no":
+                            print("the movie you were trying to guess is DC League of Super Pets") 
+                        elif b == "yes":
+                            c = input("is the movie mythological?  ").lower()
+                            if c == "yes":
+                                print("the movie you are trying to guess is Thor Love And Thunder")
+                            elif c == "no":
+                                print("the movie you were trying to guess is Spider-man: No way home") 
+        elif z == "no":
+            d = input("was the movie produced by DC? ").lower()
+            if d == "yes":
+                print("the movie you were tryng to guess is Suicide Squad")
+            elif d == "no":
+                n = input("is the movie based on an NPC? ").lower()
+                if n == "yes":
+                    print("the movie you are trying to guess is Free Guy")
+                elif n == "no":
+                    j = input("is the movie animated 3D? ").lower()
+                    if j == "no":
+                        print("the movie you are trying to guess is The Lost City")
+                    elif j == "yes":
+                        w = input("Do the characters in the movie love bananas? ").lower()
+                        if w == "yes":
+                            print("the Movie you are tryiing to guess is Minions The Rise Of Guru")
+                        elif w == "no":
+                            print("the movie you are trying to guess is The Super Mario Bros Movie")  
+        break                       
+    else:
+        print("you have to type either thriller or action")
